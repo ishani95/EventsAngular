@@ -1,0 +1,13 @@
+<mat-form-field>
+  <input matInput [(ngModel)]="user.email" placeholder="Email"/>
+  </mat-form-field>
+  
+  <mat-form-field>
+  <input matInput [(ngModel)]="user.password" placeholder="password"/>
+  <mat-error *ngIf="errorMessage">Due Date is required for Tasks</mat-error>
+  </mat-form-field>
+  <div>
+  <mat-card-actions>
+    <button mat-button (click)="loginUser(user)">Log in</button>
+  <mat-error *ngIf="errorMessage">{{errorMessage}}</mat-error>
+  </mat-card-actions>

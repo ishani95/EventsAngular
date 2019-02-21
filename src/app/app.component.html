@@ -1,0 +1,15 @@
+<button mat-button color="primary" style="margin-left: 210px" [matMenuTriggerFor]="menu1">Menu</button>
+<mat-menu #menu1="matMenu" yPosition="above" xPosition="before">
+  <button mat-menu-item>Item 1</button>
+  <button mat-menu-item>Item 2</button>
+</mat-menu>
+<button mat-button color="primary" style="margin-left: 10px" [matMenuTriggerFor]="menu2">Menu</button>
+<mat-menu #menu2="matMenu" yPosition="above" xPosition="before">
+  <button mat-menu-item>Item 1</button>
+  <button mat-menu-item>Item 2</button>
+</mat-menu>
+<a [routerLink]="'sign-up'"><button mat-button color="primary" style="margin-left: 720px">Sign Up</button></a>
+<a [routerLink]="'log-in'"><button mat-button color="primary" style="margin-left: 720px">Sign In</button></a>
+<div style="background-image:url('http://www.pptback.com/uploads/abstract-shades-of-pale-blue-backgrounds-powerpoint.jpg'); background-size:cover; height:100vh">
+  <router-outlet></router-outlet>
+</div>
